@@ -1,0 +1,9 @@
+export const metadata = {
+  title: "Afagamento de Pavimentos em Lisboa | Apex Construções",
+  description:
+    "Especialistas em afagamento de pavimentos de madeira em Lisboa. Recuperação, lixagem e acabamento com qualidade profissional pela Apex Construções.",
+};
+
+export default function Layout({ children }) {
+  return children;
+}
