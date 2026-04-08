@@ -15,6 +15,23 @@ export const metadata = {
   title: "Apex Construções | Construção e Remodelação em Lisboa",
   description:
     "Empresa de construção civil em Lisboa especializada em remodelações, pavimentos, cozinhas e afagamento de madeira. Qualidade, organização e acabamento profissional.",
+
+  openGraph: {
+    title: "Apex Construções",
+    description:
+      "Construção e remodelação em Lisboa com qualidade e acabamento profissional.",
+    url: "https://apexconstrucoes.pt",
+    siteName: "Apex Construções",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "pt_PT",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
