@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Apex Construções | Construção e Remodelação em Lisboa",
   description:
-    "Empresa de construção civil em Lisboa especializada em remodelações, pavimentos, cozinhas e afagamento de madeira. Qualidade, organização e acabamento profissional.",
+    "Serviços de construção civil, remodelações, cozinhas, roupeiros, pavimentos e afagamento de madeira em Lisboa. Qualidade, organização e acabamento profissional.",
 
   openGraph: {
     title: "Apex Construções",

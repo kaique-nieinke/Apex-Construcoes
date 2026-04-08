@@ -3,12 +3,6 @@ import WhatsappButton from "./componentes/WhatsappButton";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Construção e Remodelação em Lisboa | Apex Construções",
-  description:
-    "Serviços de construção civil, remodelações, cozinhas, roupeiros, pavimentos e afagamento de madeira em Lisboa. Qualidade, organização e acabamento profissional.",
-};
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F5F5F5] text-[#1A1A1A]">
