@@ -24,13 +24,22 @@ export const metadata = {
     siteName: "Apex Construções",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://apexconstrucoes.pt/og-image.jpg",
         width: 1200,
         height: 630,
+        alt: "Apex Construções - Construção e Remodelação",
       },
     ],
     locale: "pt_PT",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Apex Construções",
+    description:
+      "Construção e remodelação em Lisboa com qualidade e acabamento profissional.",
+    images: ["https://apexconstrucoes.pt/og-image.jpg"],
   },
 };
 
