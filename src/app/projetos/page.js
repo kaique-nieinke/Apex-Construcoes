@@ -39,7 +39,7 @@ export default function Projetos() {
             Projetos
           </p>
           <h1 className="text-4xl font-semibold md:text-5xl">
-            Categorias de trabalhos
+            Projetos em Lisboa
           </h1>
         </div>
 

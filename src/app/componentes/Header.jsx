@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+
 const mobileMenuContainer = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
@@ -17,6 +19,16 @@ const mobileMenuItem = {
 };
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  function navLinkClass(href) {
+    return `text-sm transition ${
+      pathname === href
+        ? "text-[#D24825]"
+        : "text-[#B8B8B8] hover:text-[#D24825]"
+    }`;
+  }
+
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#0B0B0B]/80 backdrop-blur">
       {" "}
@@ -33,36 +45,41 @@ export default function Header() {
           />{" "}
         </Link>{" "}
         <nav className="hidden gap-8 md:flex">
-          {" "}
+          <Link
+            href="/"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+            className={navLinkClass("/")}
+          >
+            Início
+          </Link>
+
           <a
             href="/#sobre"
             className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
           >
-            {" "}
-            Sobre{" "}
-          </a>{" "}
+            Sobre
+          </a>
+
           <a
             href="/#servicos"
             className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
           >
-            {" "}
-            Serviços{" "}
-          </a>{" "}
-          <Link
-            href="/projetos"
-            className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
-          >
-            {" "}
-            Projetos{" "}
-          </Link>{" "}
-          <Link
-            href="/contato"
-            className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
-          >
-            {" "}
-            Contato{" "}
-          </Link>{" "}
-        </nav>{" "}
+            Serviços
+          </a>
+
+          <Link href="/projetos" className={navLinkClass("/projetos")}>
+            Projetos
+          </Link>
+
+          <Link href="/contacto" className={navLinkClass("/contacto")}>
+            Contacto
+          </Link>
+        </nav>
         <a
           href="https://wa.me/351936924097?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
           target="_blank"
@@ -95,47 +112,54 @@ export default function Header() {
             animate="visible"
             className="flex flex-col gap-4"
           >
-            {" "}
+            <motion.div variants={mobileMenuItem}>
+              <Link
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className={navLinkClass("/")}
+              >
+                Início
+              </Link>
+            </motion.div>
+
             <motion.a
               variants={mobileMenuItem}
               href="/#sobre"
               onClick={() => setMenuOpen(false)}
               className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
             >
-              {" "}
-              Sobre{" "}
-            </motion.a>{" "}
+              Sobre
+            </motion.a>
+
             <motion.a
               variants={mobileMenuItem}
               href="/#servicos"
               onClick={() => setMenuOpen(false)}
               className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
             >
-              {" "}
-              Serviços{" "}
-            </motion.a>{" "}
+              Serviços
+            </motion.a>
+
             <motion.div variants={mobileMenuItem}>
-              {" "}
               <Link
                 href="/projetos"
                 onClick={() => setMenuOpen(false)}
-                className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
+                className={navLinkClass("/projetos")}
               >
-                {" "}
-                Projetos{" "}
-              </Link>{" "}
-            </motion.div>{" "}
+                Projetos
+              </Link>
+            </motion.div>
+
             <motion.div variants={mobileMenuItem}>
-              {" "}
               <Link
-                href="/contato"
+                href="/contacto"
                 onClick={() => setMenuOpen(false)}
-                className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
+                className={navLinkClass("/contacto")}
               >
-                {" "}
-                Contato{" "}
-              </Link>{" "}
-            </motion.div>{" "}
+                Contacto
+              </Link>
+            </motion.div>
+
             <motion.a
               variants={mobileMenuItem}
               href="https://wa.me/351936924097?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
@@ -144,10 +168,9 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="text-sm text-[#B8B8B8] transition hover:text-[#D24825]"
             >
-              {" "}
-              Orçamento{" "}
-            </motion.a>{" "}
-          </motion.nav>{" "}
+              Orçamento
+            </motion.a>
+          </motion.nav>
         </motion.div>
       )}{" "}
     </header>

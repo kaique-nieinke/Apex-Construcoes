@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="/#contato"
+              href="/#contacto"
               className="rounded-full bg-[#D24825] px-6 py-3 font-semibold text-white transition hover:scale-105 hover:bg-[#A8371C]"
             >
               Pedir orçamento
@@ -258,12 +258,12 @@ export default function Home() {
       </section>
 
       <section
-        id="contato"
+        id="contacto"
         className="border-t border-white/10 bg-[#111111] px-6 py-24"
       >
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#D24825]">
-            Contato
+            Contacto
           </p>
 
           <h2 className="mb-6 text-3xl font-semibold text-white md:text-5xl">
@@ -286,7 +286,7 @@ export default function Home() {
             </a>
 
             <a
-              href="mailto:kaiquenieinke@yahoo.com"
+              href="mailto:geral@apexconstrucoes.pt"
               className="rounded-full border border-[#2F2F2F] bg-[#181818] px-8 py-4 font-semibold text-white transition hover:border-[#D24825]"
             >
               Enviar Email

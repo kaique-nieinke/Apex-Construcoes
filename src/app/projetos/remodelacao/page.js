@@ -69,12 +69,18 @@ export default function Remodelacao() {
 
   return (
     <>
-      <main className="relative z-10 min-h-screen bg-[#0B0B0B] px-6 pb-10 text-white">
+      <main className="min-h-screen bg-[#0B0B0B] px-6 pb-10 text-white">
         <div className="mx-auto max-w-7xl pt-28">
           <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#D24825]">
             Projetos
           </p>
-          <h1 className="mb-12 text-3xl font-semibold">Remodelações</h1>
+          <h1 className="mb-4 text-3xl font-semibold">Remodelações</h1>
+          <p className="mb-12 max-w-3xl leading-7 text-gray-300">
+            Somos especialistas em remodelação de espaços. Transformamos
+            ambientes com soluções práticas e acabamentos de alto nível,
+            valorizando cada detalhe e garantindo um resultado final de
+            qualidade.
+          </p>
 
           {albuns.map((album, index) => (
             <div key={album.id} className="w-full">

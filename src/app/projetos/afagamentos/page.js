@@ -162,10 +162,10 @@ export default function Afagamentos() {
           </h1>
 
           <p className="mb-12 max-w-3xl leading-7 text-gray-300">
-            Somos especialistas em afagamento de pavimentos de madeira em
-            Lisboa. Realizamos recuperação, lixagem e acabamento com alto padrão
-            de qualidade, valorizando o aspecto natural da madeira e aumentando
-            a durabilidade.
+            Somos especialistas em afagamento de pavimentos de madeira.
+            Realizamos recuperação, lixagem e acabamento com alto padrão de
+            qualidade, valorizando o aspecto natural da madeira e aumentando a
+            durabilidade.
           </p>
 
           {albuns.map((album, index) => (

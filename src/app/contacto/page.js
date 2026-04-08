@@ -66,7 +66,7 @@ export default function Contato() {
             style={{ marginTop: "220px", marginBottom: "80px" }}
           >
             <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#D24825]">
-              Contato
+              Contacto
             </p>
 
             <h1 className="text-4xl font-semibold md:text-5xl">
@@ -99,10 +99,10 @@ export default function Contato() {
               <div className="rounded-2xl border border-[#2F2F2F] bg-[#181818] p-6">
                 <h2 className="mb-4 text-lg font-semibold text-white">Email</h2>
                 <a
-                  href="mailto:kaiquenieinke@yahoo.com"
+                  href="mailto:geral@apexconstrucoes.pt"
                   className="text-sm leading-7 text-[#D24825] transition hover:opacity-80"
                 >
-                  kaiquenieinke@yahoo.com
+                  geral@apexconstrucoes.pt
                 </a>
               </div>
 
@@ -113,7 +113,7 @@ export default function Contato() {
                 <p className="text-sm leading-7 text-gray-300">
                   Seg a Sex 08:00h – 19:00h
                   <br />
-                  Sabado 08:00h – 16:00h
+                  Sábado 08:00h – 16:00h
                 </p>
               </div>
 
