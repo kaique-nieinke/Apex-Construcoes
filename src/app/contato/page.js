@@ -32,7 +32,7 @@ export default function Contato() {
 
     try {
       await emailjs.send(
-        "service_phgk7lx",
+        "service_srb80ym",
         "template_z9vjlq9",
         formData,
         "ZhfkMZrQYvbrGogp3",
