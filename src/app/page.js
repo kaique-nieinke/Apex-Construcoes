@@ -121,7 +121,7 @@ export default function Home() {
         id="servicos"
         className="border-t border-white/10 bg-[#111111] px-6 py-24"
       >
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-4xl">
           <div className="mb-14 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#D24825]">
               Serviços
@@ -138,113 +138,107 @@ export default function Home() {
           </div>
 
           {/* GRID */}
-          <div className="grid grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
             {/* CARD */}
-            <div className="aspect-square overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] hover:border-[#D24825] transition flex flex-col">
-              <div className="relative h-1/2">
-                <Image
-                  src="/placeholder.jpg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center items-center p-4 text-center">
+            <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
+              <Image
+                src="/imagens-home/construcao.PNG"
+                alt="Construção"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center">
                 <h3 className="text-base font-semibold text-white">
                   Construção
                 </h3>
-                <p className="text-sm text-gray-300 mt-1">
+                <p className="mt-1 text-sm text-gray-300">
                   Obras completas com qualidade.
                 </p>
               </div>
             </div>
 
-            <div className="aspect-square overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] hover:border-[#D24825] transition flex flex-col">
-              <div className="relative h-1/2">
-                <Image
-                  src="/placeholder.jpg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center items-center p-4 text-center">
+            <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
+              <Image
+                src="/imagens-home/remodelacao.PNG"
+                alt="Remodelação"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center">
                 <h3 className="text-base font-semibold text-white">
                   Remodelação
                 </h3>
-                <p className="text-sm text-gray-300 mt-1">
+                <p className="mt-1 text-sm text-gray-300">
                   Renovação profissional.
                 </p>
               </div>
             </div>
 
-            <div className="aspect-square overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] hover:border-[#D24825] transition flex flex-col">
-              <div className="relative h-1/2">
-                <Image
-                  src="/placeholder.jpg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center items-center p-4 text-center">
+            <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
+              <Image
+                src="/imagens-home/cozinhas.PNG"
+                alt="Cozinhas"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center">
                 <h3 className="text-base font-semibold text-white">Cozinhas</h3>
-                <p className="text-sm text-gray-300 mt-1">Montagem precisa.</p>
+                <p className="mt-1 text-sm text-gray-300">Montagem precisa.</p>
               </div>
             </div>
 
-            <div className="aspect-square overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] hover:border-[#D24825] transition flex flex-col">
-              <div className="relative h-1/2">
-                <Image
-                  src="/placeholder.jpg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center items-center p-4 text-center">
+            <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
+              <Image
+                src="/imagens-home/caixilharia.PNG"
+                alt="Caixilharias"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center">
                 <h3 className="text-base font-semibold text-white">
-                  Castilharias
+                  Caixilharias
                 </h3>
-                <p className="text-sm text-gray-300 mt-1">
+                <p className="mt-1 text-sm text-gray-300">
                   Acabamentos de qualidade.
                 </p>
               </div>
             </div>
 
-            <div className="aspect-square overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] hover:border-[#D24825] transition flex flex-col">
-              <div className="relative h-1/2">
-                <Image
-                  src="/placeholder.jpg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center items-center p-4 text-center">
+            <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
+              <Image
+                src="/imagens-home/pavimento.PNG"
+                alt="Pavimentos"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center">
                 <h3 className="text-base font-semibold text-white">
                   Pavimentos
                 </h3>
-                <p className="text-sm text-gray-300 mt-1">
+                <p className="mt-1 text-sm text-gray-300">
                   Instalação perfeita.
                 </p>
               </div>
             </div>
 
-            <div className="aspect-square overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] hover:border-[#D24825] transition flex flex-col">
-              <div className="relative h-1/2">
-                <Image
-                  src="/placeholder.jpg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col justify-center items-center p-4 text-center">
+            <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
+              <Image
+                src="/imagens-home/afagamento.PNG"
+                alt="Afagamentos"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center">
                 <h3 className="text-base font-semibold text-white">
                   Afagamentos
                 </h3>
-                <p className="text-sm text-gray-300 mt-1">Madeira renovada.</p>
+                <p className="mt-1 text-sm text-gray-300">Madeira renovada.</p>
               </div>
             </div>
           </div>
