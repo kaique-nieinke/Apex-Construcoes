@@ -261,7 +261,7 @@ export default function Home() {
       <WhatsappButton />
       <footer className="border-t border-white/10 bg-[#080808] px-6 py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-center text-sm text-gray-500 md:flex-row">
-          <p>© 2026 Apex Construções. Todos os direitos reservados.</p>
+          <p>© 2020 Apex Construções. Todos os direitos reservados.</p>
           <p>Construção civil com qualidade, detalhe e confiança.</p>
         </div>
       </footer>
