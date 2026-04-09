@@ -178,7 +178,7 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-2xl border border-[#2F2F2F] bg-[#181818] transition hover:border-[#D24825]">
               <Image
-                src="/imagens-home/cozinhas.PNG"
+                src="/imagens-home/cozinha.png"
                 alt="Cozinhas"
                 width={800}
                 height={600}
